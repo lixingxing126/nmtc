@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestController {
 
-
+    @RequestMapping("/1")
+    public String test () {
+        return "ces";
+    }
 
 
 }
