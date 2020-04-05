@@ -22,4 +22,5 @@ public interface NmtcUserMapper {
     NmtcUser gitNmtcId(int id);
 
 
+    NmtcUser getById(int id);
 }

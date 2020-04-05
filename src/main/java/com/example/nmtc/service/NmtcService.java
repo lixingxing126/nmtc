@@ -20,4 +20,5 @@ public interface NmtcService {
     NmtcUser gitNmtcId(int id);
 
 
+    NmtcUser getById(int id);
 }

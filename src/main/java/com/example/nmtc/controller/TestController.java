@@ -27,6 +27,11 @@ public class TestController {
         return nmtcService.gitNmtcId(id);
     }
 
+    @GetMapping("/getById")
+    @ResponseBody
+    public NmtcUser getById (int id) {
+        return nmtcService.getById(id);
+    }
 
 }
 

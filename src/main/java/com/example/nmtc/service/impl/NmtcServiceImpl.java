@@ -28,6 +28,10 @@ public class NmtcServiceImpl implements NmtcService {
         return nmtcUser;
     }
 
+    @Override
+    public NmtcUser getById(int id) {
+        return nmtcUserMapper.getById(id);
+    }
 
 
 }
