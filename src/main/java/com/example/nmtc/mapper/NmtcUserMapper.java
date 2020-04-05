@@ -14,4 +14,12 @@ public interface NmtcUserMapper {
      */
     boolean gitNmtc(NmtcUser nmtcUser);
 
+    /**
+     * 用ID返回一个对象
+     * @param id
+     * @return
+     */
+    NmtcUser gitNmtcId(int id);
+
+
 }

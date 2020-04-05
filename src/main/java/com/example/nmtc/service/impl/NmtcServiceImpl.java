@@ -4,11 +4,13 @@ import com.example.nmtc.entity.NmtcUser;
 import com.example.nmtc.mapper.NmtcUserMapper;
 import com.example.nmtc.service.NmtcService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 /**
  * @author shkstart
  * @create 2020-04-05 13:49
  */
+@Service
 public class NmtcServiceImpl implements NmtcService {
 
     @Autowired
@@ -16,8 +18,16 @@ public class NmtcServiceImpl implements NmtcService {
 
     @Override
     public boolean gitNmtc(NmtcUser nmtcUser) {
-        nmtcUserMapper.gitNmtc(nmtcUser);
-        return false;
+        boolean b = nmtcUserMapper.gitNmtc(nmtcUser);
+        return b;
     }
+
+    @Override
+    public NmtcUser gitNmtcId(int id) {
+        NmtcUser nmtcUser = nmtcUserMapper.gitNmtcId(id);
+        return nmtcUser;
+    }
+
+
 
 }

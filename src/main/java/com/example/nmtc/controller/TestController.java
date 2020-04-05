@@ -3,9 +3,7 @@ package com.example.nmtc.controller;
 import com.example.nmtc.entity.NmtcUser;
 import com.example.nmtc.service.NmtcService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/test")
@@ -19,11 +17,15 @@ public class TestController {
         return "ces";
     }
 
-   @PostMapping("/insert")
-   public boolean insertNmtc (NmtcUser nmtcUser){
+    @PostMapping("/insert")
+    public boolean insertNmtc (NmtcUser nmtcUser){
         return nmtcService.gitNmtc(nmtcUser);
-   }
+    }
 
+    @GetMapping
+    public NmtcUser gitNmtcId(int id){
+        return nmtcService.gitNmtcId(id);
+    }
 
 
 }

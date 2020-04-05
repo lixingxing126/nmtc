@@ -5,14 +5,13 @@
     <!-- 通用查询映射结果 -->
 
     <insert id="gitNmtc">
-      	INSERT INTO TABLE nmtc_user (user_id,user_name,user_age,user_phone，uset_department_id)
-	    VALUES (#{user_id},#{user_name},#{user_age},#{user_phone},#{uset_department_id});
+      	INSERT INTO nmtc_user (user_name,user_age,user_phone,user_creation,user_turnover,uset_department_id)
+	    VALUES (#{userName},#{userAge},#{userPhone},#{userCreation},#{userTurnover},#{usetDepartmentId});
     </insert>
-
-
-
-
-
+    
+    <select id="gitNmtcId" resultType="com.example.nmtc.entity.NmtcUser">
+        SELECT * FROM nmtc_user o WHERE o.user_id = #{id}
+    </select>
 
 
 </mapper>
