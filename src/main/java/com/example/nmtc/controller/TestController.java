@@ -1,5 +1,11 @@
 package com.example.nmtc.controller;
 
+import com.example.nmtc.bean.NmtcUser;
+import com.example.nmtc.service.NmtcService;
+import com.example.nmtc.serviceimpl.NmtcServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -7,10 +13,20 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/test")
 public class TestController {
 
+    @Autowired
+    private NmtcService nmtcService;
+
     @RequestMapping("/1")
     public String test () {
         return "ces";
     }
 
+   @PostMapping("/insert")
+   public boolean insertNmtc (NmtcUser nmtcUser){
+        return nmtcService.gitNmtc(nmtcUser);
+   }
+
+
 
 }
+
