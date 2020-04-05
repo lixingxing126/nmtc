@@ -1,11 +1,9 @@
 package com.example.nmtc.controller;
 
-import com.example.nmtc.bean.NmtcUser;
+import com.example.nmtc.entity.NmtcUser;
 import com.example.nmtc.service.NmtcService;
-import com.example.nmtc.serviceimpl.NmtcServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

@@ -1,6 +1,7 @@
 package com.example.nmtc.service;
 
-import com.example.nmtc.bean.NmtcUser;
+
+import com.example.nmtc.entity.NmtcUser;
 
 /**
  * @author shkstart

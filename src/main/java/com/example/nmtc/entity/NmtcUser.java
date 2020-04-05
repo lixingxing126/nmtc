@@ -1,4 +1,4 @@
-package com.example.nmtc.bean;
+package com.example.nmtc.entity;
 
 import lombok.Data;
 import lombok.ToString;

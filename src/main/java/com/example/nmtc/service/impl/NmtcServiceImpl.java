@@ -1,6 +1,6 @@
-package com.example.nmtc.serviceimpl;
+package com.example.nmtc.service.impl;
 
-import com.example.nmtc.bean.NmtcUser;
+import com.example.nmtc.entity.NmtcUser;
 import com.example.nmtc.mapper.NmtcUserMapper;
 import com.example.nmtc.service.NmtcService;
 import org.springframework.beans.factory.annotation.Autowired;

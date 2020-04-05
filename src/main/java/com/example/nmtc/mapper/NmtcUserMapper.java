@@ -1,6 +1,6 @@
 package com.example.nmtc.mapper;
 
-import com.example.nmtc.bean.NmtcUser;
+import com.example.nmtc.entity.NmtcUser;
 
 /**
  * @author shkstart
